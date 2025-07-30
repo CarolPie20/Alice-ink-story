@@ -210,7 +210,26 @@ body.dark .choice a:hover {
 body.dark .end {
     color: #E6E6FA;
 }
+/* Make the outer container a fixed height with vertical scrolling */
+.outerContainer {
+  height: 80vh;         /* Adjust height as needed, 80% of viewport height */
+  overflow-y: auto;     /* Enable vertical scroll when content overflows */
+  scrollbar-width: thin; /* Optional: thinner scrollbar in Firefox */
+  scrollbar-color: #888 #eee; /* Optional: scrollbar colors */
+}
 
+/* Optional: style scrollbar for WebKit browsers (Chrome, Safari) */
+.outerContainer::-webkit-scrollbar {
+  width: 8px;
+}
+
+.outerContainer::-webkit-scrollbar-track {
+  background: #eee;
+}
+
+.outerContainer::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 4px;
 
 
 
